@@ -1,0 +1,49 @@
+.start-screen{
+    background-color: #404040;
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+    .background{
+        height: 100vh;
+    }
+
+    .start-button{
+        position: absolute;
+        top:300px;
+        width: 80px;
+        height: 80px;
+
+        &:hover{
+            cursor: pointer;
+            
+            filter: invert(3)
+        }
+    }
+
+    p{
+        position: absolute;
+        font-size: 50px;
+    }
+    .text{
+        top: 23%;
+        color: #f7f6f4;
+        text-align: center;
+    }
+    .text1{
+        top: 45%;
+        left: 43%;
+        color: #f7f6f4;
+    }
+    .text2{
+        top: 45%;
+        left: 52.5%;
+        color: #f7f6f4;
+    }
+
+
+}
