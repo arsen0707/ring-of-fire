@@ -1,0 +1,232 @@
+.gameField{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .backgroundfoto{
+        width: 100vw;
+        height: 100vh;
+        
+    }
+
+    @media (max-width:1050px) {
+        .card-Stack{
+            left: 230px;
+        } 
+    }
+
+    @media (max-width:780px) {
+        
+        .card-Stack{
+            
+            img{
+                width: 80px;
+                height: 120px;
+            }
+        }
+
+        .played-card{
+            right: 25px;
+            transform: scale(1.3) translateX(110px) translateY(-120px) rotate(-10deg); 
+        }
+        
+        .pick-Card{
+            animation: pick-card-animation-mobile 1s ease-in-out;
+            transform: scale(1.3) translateX(110px) translateY(-120px) rotate(-10deg);
+        }
+
+        @keyframes pick-card-animation-mobile {
+            0%{
+                transform: scale(1) ;
+            }
+            40%{
+                transform: scale(1.7) ;
+            }
+            60%{
+                transform: scale(1.7) ;
+            }
+            100%{
+                transform: scale(1.3) translateX(110px) translateY(-120px) rotate(-10deg);
+            }        
+        }   
+    }
+
+    @media (max-width:780px) {
+        .card-Stack{
+            bottom: 265px;
+        }
+    }
+
+
+    @media (max-width:450px) {
+        .card-Stack{
+            left: 138px;
+        }
+    }
+
+        
+}
+
+
+
+
+
+.card-Stack{
+    position: absolute;
+    top: 290px;
+    
+    img{
+        position: absolute;
+        width: 120px;
+    }
+    @media (max-width:700px) {
+        top: 333px;
+    }
+
+}
+
+.top-card{
+    cursor: pointer;
+    transition: all 225ms ease-in-out;
+
+    &:hover{
+        transform: scale(1.1) translateY(-10px);
+    }
+}
+
+.played-card{
+    right: 25px;
+    transform: scale(1.3) translateX(140px) translateY(-180px) rotate(-10deg); 
+
+   
+}
+
+.pick-Card{
+    animation: pick-card-animation 1s ease-in-out;
+    transform: scale(1.3) translateX(140px) translateY(-180px) rotate(-10deg);
+
+   
+}
+
+@keyframes pick-card-animation {
+    0%{
+        transform: scale(1) ;
+    }
+    40%{
+        transform: scale(1.5) ;
+    }
+    60%{
+        transform: scale(1.5) ;
+    }
+    100%{
+        transform: scale(1.3) translateX(140px) translateY(-180px) rotate(-10deg);
+    }
+    
+}
+
+.player-position{
+    position: absolute;
+    right: 0;
+    
+}
+
+.player-position-mobile{
+    position: absolute;
+    left: 25px;
+    top: 0;
+}
+
+.btn-add{
+    position: absolute;
+    right: 32px;
+    bottom: 19px;
+    background-color: rgb(112, 30, 18);
+
+    @media (max-width:780px) {
+        bottom: 25px;
+    }
+    @media (max-width:700px) {
+        bottom: 14px;
+    }
+    @media (max-width:450px) {
+        bottom: 105px;
+    }
+}
+
+.pin-bottom{
+    position: absolute;
+    bottom: 12px;
+    right: 100px;
+    left: 400px;
+
+    @media (max-width:900px) {
+        
+        left: 250px;
+    }
+
+    @media (max-width:780px) {
+        bottom: 10px;
+        left: 50px;
+    }
+
+    @media (max-width:450px) {
+        left: 10px;
+        right: 10px;
+    }
+}
+
+.scroll-bar-desktop{
+    position: absolute;
+    right: 0;
+    overflow-y: auto;
+    height: 460px;
+    width: 330px;
+}
+
+.scroll-bar{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    display: flex;
+    overflow-x: visible;
+    overflow-y: hidden;
+    app-add-player-mobile{
+        margin-left: 8px;
+    }
+
+    @media (min-width:701px) {
+        display: none;
+    }
+}
+
+app-add-player-mobile, app-player{
+    cursor: pointer;
+
+    &:hover{
+        filter: brightness(1.7);
+    }
+}
+
+.game-over{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    img{
+        height: 50%;
+        width: 50%;
+        
+    }
+
+    @media (max-width:700px) {
+        img{
+            height: 60%;
+            width: 100%;
+            
+        }
+    }
+    
+}

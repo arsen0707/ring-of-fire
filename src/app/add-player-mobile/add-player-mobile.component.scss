@@ -1,0 +1,29 @@
+.player{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 77px;
+    justify-content: flex-start;
+    height: 100px;
+    background-color: rgba(228, 219, 219, 0.3);
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    img{
+        width: 50px;
+        height: 50px;
+       background-color: aliceblue;
+        border-radius: 100%;
+    }
+    span{
+        font-size: 16px;
+        padding-bottom: 15px;
+        color: aliceblue;
+        word-wrap: break-word;
+        width: 60px;
+        text-align: center;
+    }
+}
+
+.player-active{
+    background-color: rgba(196, 116, 55, 0.7);
+}

@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "newproject-at": {
+      "hosting": {
+        "my-app": [
+          "newproject-at"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "newproject-at"
+  }
+}
